@@ -1,0 +1,16 @@
+How many students? 1
+
+ Student 1 Details
+Name: Meghana
+Number of subjects: 2
+Subject 1 name: DSA
+Marks in DSA: 76
+Subject 2 name: Japanese
+Marks in Japanese: 85
+
+ Report Card
+Student: Meghana
+DSA          Marks:  76 | Grade: B+
+Japanese     Marks:  85 | Grade: A
+Total Percentage: 80.50%
+Overall Grade  : B+
