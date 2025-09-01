@@ -1,0 +1,22 @@
+Enter number of junctions and pipes: 5 6
+Enter pipe connections as: u v cost (0 indexed junctions)
+0 1 2
+ 0 2 4
+ 1 2 1
+ 1 3 7
+ 2 4 3
+  3 4 1
+Enter starting junction: 0
+Enter goal junction: 4
+
+BFS Path (ignores cost): [0, 2, 4]
+
+DFS Path (ignores cost): [0, 1, 2, 4]
+
+Enter depth limit for Depth-Limited Search: 3
+Depth-Limited Search Path: [0, 1, 2, 4]
+
+Enter max depth for Iterative Deepening Search: 5
+Iterative Deepening Search Path: [0, 2, 4]
+
+Uniform Cost Search Path: [0, 1, 2, 4] with total cost 6
