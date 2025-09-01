@@ -1,0 +1,17 @@
+Sample Output
+
+vacuum cleaner
+enter character choice
+1-dust cleaner,
+2-rock cleaner,
+3-cloth cleaner,
+4-edge cleaner:1
+dust cleaner selected, best shape circle
+enter shape(circle,square,rectangle,triangle):circle
+enter command(start,stop,left,right,suck,dock):start
+started
+enter command(start,stop,left,right,suck,dock):suck
+Circle: Best for cleaning fine dust like sand
+Sucking dirt, done!!
+enter command(start,stop,left,right,suck,dock):dock
+Docking and shutting down. Thank you for using the vacuum cleaner.
