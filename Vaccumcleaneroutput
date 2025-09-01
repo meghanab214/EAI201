@@ -1,17 +1,19 @@
 Sample Output
 
-vacuum cleaner
-enter character choice
-1-dust cleaner,
-2-rock cleaner,
-3-cloth cleaner,
-4-edge cleaner:1
-dust cleaner selected, best shape circle
-enter shape(circle,square,rectangle,triangle):circle
-enter command(start,stop,left,right,suck,dock):start
-started
-enter command(start,stop,left,right,suck,dock):suck
-Circle: Best for cleaning fine dust like sand
-Sucking dirt, done!!
-enter command(start,stop,left,right,suck,dock):dock
-Docking and shutting down. Thank you for using the vacuum cleaner.
+Vacuum Cleaner Simulation
+Choose cleaner type:
+1. Dust Cleaner
+2. Rock Cleaner
+3. Cloth Cleaner
+4. Edge Cleaner
+Enter choice (1-4): 1
+Dust Cleaner selected → Suggested shape: Circle
+Enter shape (circle/square/rectangle/triangle): circle
+Enter command (start, move_left, move_right, clean, stop, dock): start
+Vacuum started successfully!
+Enter command (start, move_left, move_right, clean, stop, dock): move_left
+Shifting towards left side.
+Enter command (start, move_left, move_right, clean, stop, dock): stop
+Vacuum stopped.
+Enter command (start, move_left, move_right, clean, stop, dock): dock
+Returning to Docking Station... Shutting down.
