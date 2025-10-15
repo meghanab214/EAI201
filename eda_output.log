@@ -1,0 +1,105 @@
+
+Standard Titanic dataset loaded successfully.
+
+1. Exploratory Data Analysis
+
+First 5 rows of the dataset:
+   survived  pclass     sex   age  ...  deck  embark_town  alive  alone
+0         0       3    male  22.0  ...   NaN  Southampton     no  False
+1         1       1  female  38.0  ...     C    Cherbourg    yes  False
+2         1       3  female  26.0  ...   NaN  Southampton    yes   True
+3         1       1  female  35.0  ...     C  Southampton    yes  False
+4         0       3    male  35.0  ...   NaN  Southampton     no   True
+
+[5 rows x 15 columns]
+
+==================================================
+
+ Data Types and Missing Values
+Data Types:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 15 columns):
+ #   Column       Non-Null Count  Dtype   
+---  ------       --------------  -----   
+ 0   survived     891 non-null    int64   
+ 1   pclass       891 non-null    int64   
+ 2   sex          891 non-null    object  
+ 3   age          714 non-null    float64 
+ 4   sibsp        891 non-null    int64   
+ 5   parch        891 non-null    int64   
+ 6   fare         891 non-null    float64 
+ 7   embarked     889 non-null    object  
+ 8   class        891 non-null    category
+ 9   who          891 non-null    object  
+ 10  adult_male   891 non-null    bool    
+ 11  deck         203 non-null    category
+ 12  embark_town  889 non-null    object  
+ 13  alive        891 non-null    object  
+ 14  alone        891 non-null    bool    
+dtypes: bool(2), category(2), float64(2), int64(4), object(5)
+memory usage: 80.7+ KB
+
+Missing Values:
+survived         0
+pclass           0
+sex              0
+age            177
+sibsp            0
+parch            0
+fare             0
+embarked         2
+class            0
+who              0
+adult_male       0
+deck           688
+embark_town      2
+alive            0
+alone            0
+dtype: int64
+
+==================================================
+
+Visualizing Key Feature Distributions
+Plots for feature distributions saved to 'feature_distributions.png'.
+
+Analyzing Relationships with Survival Rate
+Plots for survival analysis saved to 'survival_analysis.png'.
+
+==================================================
+
+2. Data Cleaning and Imputation
+Missing 'age' values filled with median: 28.0
+Missing 'embarked' values filled with mode: 'S'
+Dropped irrelevant columns: 'deck', 'embark_town'.
+
+==================================================
+
+3. Feature Engineering
+Created 'family_size'; dropped 'sibsp' and 'parch'.
+Created a simplified 'title' feature.
+Converted categorical features to numeric using one-hot encoding.
+
+==================================================
+
+4. Prepare Data for Modeling
+Data split into training and testing sets (80/20 split).
+
+Data Readiness Check
+Training features shape: (712, 12)
+Testing features shape:  (179, 12)
+
+First 5 rows of the final training data (X_train):
+     pclass   age      fare  ...  title_Miss  title_Mr  title_Mrs
+692       3  28.0   56.4958  ...       False      True      False
+481       2  28.0    0.0000  ...       False      True      False
+527       1  28.0  221.7792  ...       False      True      False
+855       3  18.0    9.3500  ...       False     False       True
+801       2  31.0   26.2500  ...       False     False       True
+
+[5 rows x 12 columns]
+
+Processed training and testing data saved to CSV files.
+
+
+
